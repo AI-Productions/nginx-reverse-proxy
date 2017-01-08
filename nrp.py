@@ -52,7 +52,7 @@ server {{
 
 			if self.request in ('o', 'overwrite'):
 				print('Rewriting config file and appending server block to config')
-				with open('default', 'w') as file:
+				with open('/etc/nginx/sites-enabled/default', 'w') as file:
 					file.write('')
 					file.close()
 
